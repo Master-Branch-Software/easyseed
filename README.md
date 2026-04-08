@@ -1,8 +1,6 @@
 # easyseed
 
-`easyseed` extracts the reusable parts of the seed runners used in `getmea_server` and `media_signage`.
-
-It is designed around two entrypoints:
+`easyseed` is designed around two entrypoints:
 
 - `db/seeds.rb`, which still runs through the normal `rake db:seed` or `rails db:seed` flow;
 - a spec seed file such as `spec/seeds.rb`, which your test suite can `load` after `DatabaseCleaner.clean`.
@@ -92,7 +90,7 @@ That keeps the general suite empty while still letting you maintain reusable fil
 
 ## PostgreSQL sequence reset
 
-If the active adapter is PostgreSQL, `easyseed` automatically calls `reset_pk_sequence!` after SQL and CSV files finish loading. That replaces the old commented/manual `reset_autoincrement_cols.sql` approach.
+If the active adapter is PostgreSQL, `easyseed` automatically calls `reset_pk_sequence!` after SQL and CSV files finish loading.
 
 Disable that behavior if needed:
 
