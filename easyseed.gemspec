@@ -16,10 +16,10 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.7"
   spec.license = "MIT"
 
-  spec.add_dependency "activerecord", ">= 6.1", "< 8.1"
-  spec.add_dependency "activesupport", ">= 6.1", "< 8.1"
+  spec.add_dependency "activerecord", ">= 6.1", "< 8.2"
+  spec.add_dependency "activesupport", ">= 6.1", "< 8.2"
   spec.add_dependency "csv", ">= 3.2"
-  spec.add_dependency "railties", ">= 6.1", "< 8.1"
+  spec.add_dependency "railties", ">= 6.1", "< 8.2"
 
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.13"
